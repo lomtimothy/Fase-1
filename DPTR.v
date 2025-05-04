@@ -93,7 +93,7 @@ module DPTR (
 	
     Mux2to1Param #(.WIDTH(32)) MUXAL (
         .entrada0(C2),
-        .entrada1(),    
+        .entrada1(32'b0),    
         .sel(ALUSrc),
         .salida(OP2)
 );
@@ -106,7 +106,7 @@ module DPTR (
 
     Mux2to1Param #(.WIDTH(32)) MUXPC (
     .entrada0(PCnext),
-    .entrada1(),
+    .entrada1(32'b0),
     .sel(Branch),
     .salida(PCin)
 );
