@@ -15,10 +15,7 @@ module ADD4_tb;
 
     // Estímulos
     initial begin
-        // Mostrar encabezado en consola
-        $display("Tiempo(ns)\tA\t\t\t\tRES");
-        $monitor("%0d\t%b\t%b", $time, A, RES);
-
+        
         // Inicializar
         A = 32'b00000000000000000000000000000000; // 0
         #10;
